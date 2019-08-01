@@ -1,0 +1,59 @@
+.page-number
+  position: fixed
+  right: 107px
+  bottom: 78px
+  z-index: 10
+  &__text
+    width: 71px
+    height: 156px
+  &__wave
+    position: absolute
+    right: 0
+    fill: #fff
+  &__number
+    font-size: 140px
+    transition-duration: 800ms
+    transition-property: fill
+    transition-timing-function: ease-out
+    &_masked
+      fill: #fff
+    &_1
+      fill: #ff0000
+    &_2
+      fill: #8a29ac
+    &_3
+      fill: #ba26b3
+    &_4
+      fill: #0072ff
+    &_5
+      fill: #db1f7c
+  &__mask
+    fill: #fff
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+  .page-number
+    right: 50px
+    bottom: 40px
+    &__number
+      font-size: 160px
+    &__text
+      width: 81px
+      height: 154px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+  .page-number
+    right: 30px
+    bottom: 20px
+    &__number
+      font-size: 120px
+    &__text
+      width: 61px
+      height: 153px
+
+@media (max-width: 768px)
+    .page-number
+       right: 8px
+    .page-number__text
+       width: 36px

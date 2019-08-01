@@ -1,0 +1,40 @@
+.text-with-bg
+    margin: 0
+    font-size: 21px
+    line-height: 48px
+    color: #fff
+    &__line
+        position: relative
+        display: inline-block
+        transform: scaleX(0)
+        transform-origin: 0 0
+    &__content
+        position: relative
+        display: block
+        z-index: 1
+    &__back
+        position: absolute
+        left: 1px
+        display: block
+        width: calc(100% - 2px)
+        height: 100%
+        background-color: #000
+        transform-origin: 0 100%
+    &__front
+        position: absolute
+        top: 0
+        right: -5px
+        bottom: 0
+        left: -2px
+        background-color: #000
+        z-index: 2
+        transform-origin: 100% 100%
+
+@media (max-width: 500px)
+     .section-3__text .text-with-bg__back, .section-2__text .text-with-bg__back, .section-1__text .text-with-bg__back, .section-5__text .text-with-bg__back, .contacts-screen__text-with-bg .text-with-bg__back
+        display: none
+     .section-3__text .text-with-bg__content, .section-2__text .text-with-bg__content, .section-1__text .text-with-bg__content, .section-5__text .text-with-bg__content, .contacts-screen__text-with-bg .text-with-bg__content
+        display: inline
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAASSURBVHgBY2BgYPjPBCQY0AgAFWgBCDyEHKIAAAAASUVORK5CYII=')
+        background-repeat: repeat-x
+        background-position: 50% 65%

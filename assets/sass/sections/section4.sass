@@ -1,0 +1,479 @@
+.portfolio-slider
+    position: relative
+    display: flex
+    height: 912px
+    &__bg
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        overflow: hidden
+        opacity: 0
+        transform-origin: 0 0
+    &__bg-image
+        //opacity: 0
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+    &__preview
+        position: relative
+        width: 586px
+        height: 586px
+        overflow: hidden
+        transform-origin: 100% 0
+        z-index: 1
+    &__info
+        position: relative
+        width: 694px
+        z-index: 1
+    &__top
+        position: relative
+        height: 586px
+        transform-origin: 0 0
+    &__top-images
+        position: relative
+        height: 586px
+        overflow: hidden
+    &__title
+        position: absolute
+        top: 46%
+        left: 52%
+        z-index: 1
+        transform: translateY(-45%)
+        width: 100%
+        font-size: 85px
+        span
+            opacity: 0
+    &__action
+        position: relative
+        height: 433px
+        padding: 65px 0 0 107px
+        color: #fff
+        background-color: #091830
+        transform-origin: 0 0
+    &__nav
+        margin: 0 0 55px
+        display: flex
+        align-items: center
+    &__numbers
+        margin: 0 98px
+        font-family: 'HeatherGreen'
+    &__current-slider
+        display: inline-block
+        width: 40px
+        font-size: 72px
+        line-height: 46px
+        letter-spacing: 7.2px
+    &__all-slides-count
+        font-size: 36px
+        letter-spacing: calc(36px * 100 / 1000)
+    &__button
+        cursor: pointer
+    &__arrow
+        width: 33px
+        fill: #fff
+    &__type
+        margin: 0 0 10px
+        font-size: 18px
+    &__name
+        margin: 0 0 53px
+        font-size: 40px
+        font-weight: 700
+        text-transform: uppercase
+    &__buttons
+        padding-right: 2%
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        white-space: nowrap
+    &__all-btn
+        margin: 0 0 0 10px
+        color: #0090ff
+        text-decoration: none
+
+.portfolio-preview-track
+    position: relative
+    display: flex
+    height: 100%
+
+.portfolio-preview
+  width: 100%
+
+.portfolio-image
+      height: 14.29%
+.portfolio-image img
+       width: 100%
+       height: 100%
+.portfolio-preview img
+    width: 100%
+.portfolio-slider__bg
+    height: 111.4%
+    width: 106.5%
+.section-4-optimize .container, .section-4 .container
+    display: flex
+    justify-content: center
+
+
+.portfolio-preview
+    img
+        max-width: none
+        height: 100%
+
+.portfolio-bg-track
+    height: 100%
+    display: flex
+    flex-wrap: wrap
+
+.portfolio-slider__bg-image
+    width: 100%
+
+.portfolio-image-track
+    position: absolute
+    bottom: 0
+    &.active
+        opacity: 1
+
+.portfolio-slider__image
+    display: block
+
+.portfolio-slider__top-images
+    transform-origin: 0 100%
+
+// Стили для инициализации секции
+
+.portfolio-slider-bg-bg,
+.portfolio-slider-preview-bg,
+.portfolio-slider-top-bg,
+.portfolio-slider-action-bg
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1
+    background-color: #000
+
+// 1
+
+.portfolio-slider-bg-bg
+    transform-origin: 100% 0
+
+// 2
+
+.portfolio-slider__preview
+    transform-origin: 0 0
+    transform: scaleX(0)
+
+.portfolio-slider-preview-bg
+    transform-origin: 100% 0
+
+// 3
+
+.portfolio-image-track
+    opacity: 0
+
+.portfolio-slider__info
+    transform-origin: 0 0
+
+.portfolio-slider-top-bg
+    transform: scaleX(0)
+    transform-origin: 0 100%
+
+// 4
+
+.portfolio-slider__action
+    transform: scaleY(0)
+
+.portfolio-slider__action
+    transform-origin: 0 0
+
+.portfolio-slider-action-bg
+    transform-origin: 0 100%
+
+.portfolio-slider
+    &:hover
+        .portfolio-bg-track,
+        .portfolio-preview-track,
+        .portfolio-image-track
+            will-change: transform
+
+// @media (max-width: 2200px), (max-height: 1200px)
+//
+//     .portfolio-slider
+//         margin: 0 auto
+//         width: 1088px
+//         height: 612px
+//         &__preview
+//             width: 386px
+//             height: 386px
+//         &__info
+//             width: 494px
+//         &__top
+//             height: 386px
+//         &__top-images
+//             height: 386px
+//         &__image
+//             width: 494px
+//             height: 386px
+//             object-fit: cover
+//             object-position: center
+//         &__arrow
+//             width: 23px
+//         &__action
+//             padding: 45px 0 35px 67px
+//             height: auto
+//         &__nav
+//             margin: 0 0 35px
+//         &__current-slider
+//             font-size: 52px
+//             line-height: 26px
+//         &__all-slides-count
+//             font-size: 30px
+//         &__type
+//             margin: 0 0 5px
+//             font-size: 16px
+//         &__name
+//             margin: 0 0 35px
+//             font-size: 30px
+//         &__buttons
+//             flex-direction: column
+//             align-items: flex-start
+//         &__current-btn
+//             margin: 0 0 10px
+//         &__all-btn
+//             margin: 0
+//
+//     .portfolio-preview
+//         img
+//             max-height: 386px
+@media (min-width: 1700px)
+    .portfolio-slider__title
+        font-size: 70px
+    .portfolio-slider__action
+        position: relative
+        height: 285px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .portfolio-slider__current-btn
+        padding-left: 15px
+        padding-right: 15px
+
+@media (min-width: 700px)
+    .portfolio-slider__buttons
+    .portfolio-slider__action
+        position: relative
+        height: 285px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: stretch
+    .portfolio-slider
+        margin-left: -5%
+        width: 838px
+        height: 512px
+        &__preview
+            width: 340px
+            height: 370px
+        &__top
+            height: 370px
+        &__number
+            margin: 0 58px
+        &__action
+            padding: 25px 0 25px 37px
+        &__type
+            font-size: 14px
+        &__name
+            margin: 0 0 20px
+            font-size: 24px
+        &__info
+            width: 450px
+        &__top-images
+            height: 370px
+        &__image
+            width: 394px
+            height: 286px
+        &__numbers
+            margin: 0 58px
+        &__current-slider
+            font-size: 46px
+            line-height: 20px
+        &__all-slides-count
+            font-size: 26px
+        &__all-btn
+            font-size: 12px
+            white-space: nowrap
+
+@media (max-width: 1250px)
+     .portfolio-slider
+        width: 730px !important
+        height: 502px
+        margin-left: -13%
+     .portfolio-slider__top-images
+        height: 370px
+        width: 90%
+     .portfolio-slider__action
+        width: 90%
+
+@media (max-width: 968px)
+      .portfolio-slider
+          width: 630px !important
+      .portfolio-slider__title
+          font-size: 50px
+      .portfolio-preview img
+          height: 100%
+
+@media (max-width: 768px)
+      .section-3__spot, .section-3__waves
+          display: none
+          left: 70%
+      .portfolio-slider
+          display: none
+
+@media (max-width: 500px)
+     .portfolio-slider-mobile
+          margin-top: 7% !important
+     .m-bottom-group
+          width: 250px
+     .portfolio-slider__title
+          font-size: 40px
+     .portfolio-slider__all-slides-count
+          font-size: 18px
+          margin: 0
+     .portfolio-slider__current-slider
+          font-size: 42px
+     .portfolio-slider__type
+          font-size: 14px
+     .portfolio-slider__name
+          font-size: 25px
+     .cst_m_slide_btn
+          padding: 10px
+
+@media (min-width: 2200px)
+     .portfolio-slider__title
+          font-size: 80px !important
+     .portfolio-slider
+          width: 1015px
+          height: 700px
+     .portfolio-slider__preview
+          width: 430px
+          height: 420px
+     .portfolio-slider__top, .portfolio-slider__top-images
+          height: 420px
+          width: 475px
+     .portfolio-image-track, .portfolio-slider__image
+          width: 100%
+     .portfolio-slider__all-btn
+          font-size: 15px !important
+          margin-right: 25px
+     .portfolio-slider__action
+          height: 390px
+          width: 475px
+          display: flex
+          align-items: center
+          flex-direction: column
+          justify-content: center
+     .portfolio-slider__current-slider
+          font-size: 75px
+     .portfolio-slider__all-slides-count
+          font-size: 38px
+          margin-left: 20px
+     .portfolio-slider__type
+          font-size: 21px
+     .portfolio-slider__name
+          font-size: 32px
+     .portfolio-slider__current-btn
+          font-size: 18px
+          padding: 9px
+          white-space: nowrap
+     .portfolio-slider__all-btn
+          font-size: 20px
+
+@media (max-width: 768px)
+     .m-bottom-group
+          width: 267px !important
+     .portfolio-slider__all-slides-count
+          font-size: 30px !important
+          margin: 0 !important
+     .portfolio-slider__arrow
+          width: 28px
+     .portfolio-slider__current-slider
+          font-size: 51px !important
+     .portfolio-slider__type
+          font-size: 13px !important
+     .portfolio-slider__name
+          font-size: 25px !important
+     .cst_m_slide_btn
+          font-size: 10px
+
+@media (max-width: 400px)
+     .page-number
+          pointer-events: none
+     .portfolio-slider__title
+          font-size: 35px !important
+     .m-bottom-group
+          width: 190px !important
+     .portfolio-slider__current-slider
+          font-size: 39px !important
+     .portfolio-slider__all-slides-count
+          font-size: 23px !important
+     .portfolio-slider__arrow
+          width: 21px
+     .portfolio-slider__type
+          font-size: 11px !important
+     .portfolio-slider__name
+          font-size: 20px !important
+     .cst_m_slide_btn
+          padding: 7px !important
+          font-size: 10px !important
+
+@media (max-width: 470px)
+     .portfolio-slider__title
+          font-size: 28px !important
+     .m-bottom-group
+          width: 180px !important
+          padding: 10%
+     .portfolio-slider__current-slider
+          font-size: 34px !important
+     .portfolio-slider__all-slides-count
+          font-size: 18px !important
+     .portfolio-slider__type
+          font-size: 9px !important
+     .portfolio-slider__name
+          font-size: 16px !important
+     .cst_m_slide_btn
+          padding: 6px !important
+          font-size: 7px !important
+     .portfolio_mobile
+          font-size: 7px !important
+     .m_arrow_group
+          width: 120% !important
+
+@media (max-height: 700px)
+     .portfolio-slider
+         transform: scale(0.8)
+
+@media (max-height: 400px)
+     .portfolio-slider__title
+         top: 11% !important
+         left: 38% !important
+     .portfolio-slider-mobile
+         margin-top: 20% !important
+         margin-left: 55%
+     .m-top-group
+         margin-top: -90%
+         margin-right: 215%
+         margin-left: 0% !important
+         width: 100%
+     .m-bottom-group
+         margin-left: -415%
+         margin-top: -100%
+         z-index: -1
+     .m-top-bg
+         z-index: 3
+         width: 200% !important
+         height: 268px !important
+         margin-top: 0px !important
+         margin-left: -266px !important

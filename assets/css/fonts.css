@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueLight.eot');
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueLight.woff2') format('woff2'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueBold.eot');
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueBold.woff2') format('woff2'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeue-Thin.eot');
+    src: url('~@/assets/fonts/BebasNeue/BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/BebasNeue/BebasNeue-Thin.woff2') format('woff2'),
+    url('~@/assets/fonts/BebasNeue/BebasNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueBook.eot');
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueBook.woff2') format('woff2'),
+    url('~@/assets/fonts/BebasNeue/BebasNeueBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gosha Sans';
+    src: url('~@/assets/fonts/GoshaSans/GoshaSans-Regular.eot');
+    src: url('~@/assets/fonts/GoshaSans/GoshaSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GoshaSans/GoshaSans-Regular.woff2') format('woff2'),
+    url('~@/assets/fonts/GoshaSans/GoshaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gosha Sans';
+    src: url('~@/assets/fonts/GoshaSans/GoshaSans-Bold.eot');
+    src: url('~@/assets/fonts/GoshaSans/GoshaSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GoshaSans/GoshaSans-Bold.woff2') format('woff2'),
+    url('~@/assets/fonts/GoshaSans/GoshaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heathergreen';
+    src: url('~@/assets/fonts/Heathergreen/Heathergreen.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/Heathergreen/Heathergreen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('~@/assets/fonts/Firacode/FiraCode-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}

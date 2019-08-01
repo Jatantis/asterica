@@ -1,0 +1,87 @@
+.section-nav
+    position: fixed
+    z-index: 6
+    right: 107px
+    top: calc(50% - 302px / 2)
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+        text-align: right
+    li
+        margin: 0 0 27px
+        display: block
+        &:last-child
+            margin: 0
+    &__button
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 30px
+        height: 30px
+        cursor: pointer
+        transition-property: transform, opacity
+        transition-duration: 400ms
+        transition-timing-function: ease-out
+        &:first-child
+            margin-bottom: 36px
+        &:last-child
+            margin-top: 36px
+        &:disabled
+            &:first-child
+                transform: translateY(-20px)
+                opacity: 0
+            &:last-child
+                transform: translateY(20px)
+                opacity: 0
+    &__arrow
+        fill: #fff
+        width: 12px
+    &__item
+        position: relative
+        top: -4px
+        display: block
+        height: 10px
+        width: 40px
+        &::before
+            content: ''
+            position: absolute
+            top: 4px
+            right: 0
+            display: block
+            width: 100%
+            max-width: 40px
+            height: 3px
+            background-color: #fff
+            transition-duration: 300ms
+            transition-property: transform
+            transition-timing-function: ease-out
+            transform: scaleX(0.5)
+            transform-origin: 50% 50%
+        &:hover,
+        &.active
+            &::before
+                transform: scale(1)
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .section-nav
+        top: calc(50% - 302px / 2)
+        right: 50px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .section-nav
+        top: calc(50% - 240px / 2)
+        right: 30px
+        li
+            margin: 0 0 20px
+        &__item
+            &::before
+                height: 2px
+        &__button
+            &:first-child
+                margin-bottom: 25px
+            &:last-child
+                margin-top: 25px

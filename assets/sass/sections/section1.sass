@@ -1,0 +1,187 @@
+.section-2__title, .section-3__title, .portfolio-slider__title
+    opacity: 0
+.section__video-wrapper, .section__video-canvas
+    top: 0
+    left: 0
+    width: 100vw
+.section-1
+    position: relative
+    opacity: 1
+    &__title
+        margin: 0 0 227px
+        overflow: hidden
+    &__video
+        width: 2560px
+        height: 1440px
+        position: absolute
+        left: calc(50% - 2560px / 2)
+        top: calc(50% - 1440px / 2)
+        transform: translate3d(0, 0, 0)
+        display: none
+    &__logo
+        --element-size: 1155px
+        position: absolute
+        z-index: 5
+        width: var(--element-size)
+        height: var(--element-size)
+        left: calc(50% - var(--element-size) / 2)
+        top: calc(50% - var(--element-size) / 2)
+        opacity: 0.3
+    &__text-line
+        display: block
+        opacity: 0
+        transform-origin: 0 0
+    &.active
+        z-index: 1
+
+.section-1-optimize
+    will-change: transform
+    .section-1__title,
+    .section-1__text-line,
+    .text-with-bg__back,
+    .text-with-bg__front,
+    .text-with-bg__content
+        will-change: transform
+
+.section-1__text
+    font-size: 26px
+    line-height: 1.3em
+    font-weight: 700
+    overflow: hidden
+    .text-with-bg
+        &__back
+            top: 13px
+            height: 13px
+        &__content
+            transform-origin: 0 0
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .section-1
+        &__title
+            margin: 0 0 120px
+        &__text
+            font-size: 22px
+            .text-with-bg
+                &__back
+                    top: 12px
+                    height: 11px
+        &__logo
+            --element-size: 855px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .section-1
+        &__title
+            margin: 0 0 90px
+        &__text
+            font-size: 20px
+            font-weight: 400
+            .text-with-bg
+                &__back
+                    top: 12px
+                    height: 8px
+        &__logo
+            --element-size: 650px
+
+@media (max-width: 768px)
+    .section-1__logo
+       --element-size: 350px
+    .section-1__title
+       margin: 0 0 20px
+    #section1 .container
+       display: flex
+       justify-content: center
+       align-items: flex-start
+       flex-direction: column
+       padding-left: 10%
+       padding-top: 10%
+    .section-1__text
+       margin-top: 20%
+
+@media (max-width: 500px), (max-height: 550px)
+    .section-1__title
+       margin: 0
+       margin-top: 25%
+    .section-1__text
+       line-height: 1em
+       margin-top: 30%
+    .section-1__logo
+       --element-size: 250px
+
+@media (max-width: 450px), (max-height: 550px)
+     #section1 .title_huge
+        font-size: 40px !important
+
+
+@media (min-width: 2200px)
+    .container
+       padding: 0px 195px !important
+    .section-1__title
+       font-size: 105px !important
+    .section-1__text
+       font-size: 39px
+    .section-1__text .text-with-bg__back
+       top: 24px
+    .header__logo
+       width: 75px
+    .open-menu__text
+       font-size: 190%
+    .open-menu__text
+       margin-left: -6rem
+    .language
+       font-size: 40px
+    .page-number__number
+       font-size: 200px
+    .page-number__text
+       width: 100px !important
+
+
+@media (min-width: 1400px)
+    #section1 .container
+       padding: 0 270px !important
+    .section-1__title
+       margin: 65px 0px 120px
+       font-size: 85px
+
+@media (max-width: 500px), (max-height: 550px)
+    #section1 .container
+        padding: 0 25px !important
+    #section1 .title_huge
+        font-size: 30px !important
+    .page-number__text
+       width: 35px
+    .section-1__title
+       font-size: 50px !important
+    .page-number
+       right: 10px
+    .logo
+       width: 55px
+    .section-nav
+       transform: scale(0.6)
+    .section-3__content-wrapper
+       max-width: 100%
+       margin: 0
+
+@media (max-width: 400px), (max-height: 550px)
+    .section-1__text
+       margin-top: 10%
+       font-size: 15px
+       margin-left: 1%
+       margin-bottom: 30%
+    .section-1__text .text-with-bg__back
+       top: 7px
+    .section-1__logo
+       --element-size: 250px
+
+@media (min-width: 1000px)
+    .container
+       padding: 0 100px !important
+
+@media (max-width: 1000px)
+    #section1 .container
+       padding: 0 125px !important
+
+@media (max-width: 550px)
+    #section1 .container
+       padding: 0 50px !important

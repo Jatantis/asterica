@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Gosha Sans';
+    src: url('GoshaSans-Regular.eot');
+    src: url('GoshaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GoshaSans-Regular.woff2') format('woff2'),
+        url('GoshaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gosha Sans';
+    src: url('GoshaSans-Bold.eot');
+    src: url('GoshaSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GoshaSans-Bold.woff2') format('woff2'),
+        url('GoshaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

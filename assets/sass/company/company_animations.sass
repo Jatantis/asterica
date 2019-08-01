@@ -1,0 +1,120 @@
+.years-line
+    &__number span,
+    &__line
+        transform-origin: 0 0
+        transition-property: transform
+        transition-timing-function: ease-out
+    &__line
+        transition-duration: 400ms
+    &__number
+        span
+            transition-duration: 200ms
+            display: inline-block
+        &:first-child
+            span
+                transform: translateY(-20px)
+                &:nth-child(1)
+                    transition-delay: 0ms
+                &:nth-child(2)
+                    transition-delay: 50ms
+                &:nth-child(3)
+                    transition-delay: 100ms
+                &:nth-child(4)
+                    transition-delay: 150ms
+        &:last-child
+            span
+                transform: translateY(20px)
+                &:nth-child(1)
+                    transition-delay: 650ms
+                &:nth-child(2)
+                    transition-delay: 700ms
+                &:nth-child(3)
+                    transition-delay: 750ms
+                &:nth-child(4)
+                    transition-delay: 800ms
+    &__line
+        transform: scaleX(0)
+        transition-delay: 400ms
+
+.company-first.animate
+    .years-line
+        &__number
+            &:first-child,
+            &:last-child
+                span
+                    transform: translateY(0)
+        &__line
+            transform: scaleX(1)
+    .advantage
+        opacity: 1
+        transform: translateY(0)
+
+.company-first.optimize-animations
+    .advantage
+        &__img-wrapper,
+        &__desc
+            will-change: transform, opacity
+    .years-line
+        &__number
+            span
+                will-change: transform
+        &__line
+            will-change: transform
+
+.technology-stack.optimize-animations
+    .technology-stack
+        &__subtitle
+            will-change: opacity
+        &__image-2
+            will-change: transform, opacity
+    .text-with-bg
+        &__line,
+        &__front,
+        &__back
+            will-change: transform
+
+.reviews.optimize-animations
+    .reviews-slider
+        &__image-bg,
+        &__image,
+        &__logo-bg,
+        &__logo
+            will-change: transform
+        &__quotes,
+        &__text,
+        &__person,
+        &__action
+            will-change: transform, opacity
+
+.request-form.animate
+    .form
+        &__title
+            opacity: 1
+        &__input
+            transform: scaleX(1)
+        &__label-text
+            opacity: 1
+            transform: translateY(0)
+        &__label
+            &:nth-child(1)
+                .form
+                    &__input,
+                    &__label-text
+                        transition-delay: 0ms
+            &:nth-child(2)
+                .form
+                    &__input,
+                    &__label-text
+                        transition-delay: 400ms
+            &:nth-child(3)
+                .form
+                    &__input,
+                    &__label-text
+                        transition-delay: 800ms
+        .request-form
+            &__send
+                opacity: 1
+                transition-delay: 1600ms
+            &__brief
+                opacity: 1
+                transition-delay: 1800ms

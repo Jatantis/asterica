@@ -1,0 +1,255 @@
+.menu
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    opacity: 0
+    &.active
+        z-index: 5
+        opacity: 1
+        display: flex
+        align-items: center
+        justify-content: center
+    &__list-item
+        margin: 0 0 74px
+        transform-origin: 0 0
+        opacity: 1
+        &:last-child
+            margin: 0
+    &__svg-text
+        width: 505px
+        height: 105px
+    &__svg-word
+        transform: translateY(102px)
+        font-size: 140px
+        font-family: 'Bebas Neue'
+        font-weight: 700
+        letter-spacing: 4px
+        text-transform: uppercase
+        fill: transparent
+        stroke: #fff
+        stroke-width: 2px
+    &__item-link
+        &:hover,
+        &:focus
+            .menu
+                &__svg-word
+                    fill: #ff0000
+                    stroke: #ff0000
+    &__list
+        margin: 0
+        padding: 0
+
+.menu
+    &__contacts
+        position: absolute
+        bottom: 0
+        display: flex
+        .text-with-bg
+            &__line
+                transform: scaleX(0)
+                margin: 0 85px 0 0
+            &__front
+                transform: scale(0)
+            &__back
+                top: 22px
+                height: 11px
+        a
+            color: #fff
+            text-decoration: none
+    &__socials
+        position: absolute
+        bottom: 0
+        right: 107px
+    &__when-menu
+        position: absolute
+        bottom: 78px
+        left: 0
+        width: 100%
+        z-index: 10
+
+.menu-images
+    position: absolute
+    top: calc(50% - 1050px / 2)
+    left: calc(50% - 1050px / 2 + 350px)
+    &__waves
+        width: 1050px
+        height: 1050px
+    &__wave
+        transform-origin: 50% 50%
+        opacity: 0
+        &-1
+            fill: #5e657f
+        &-2
+            fill: #4f5668
+        &-3
+            fill: #383e4c
+        &-4
+            fill: #282c35
+    &__image-hidden
+        display: none
+    &__image
+        position: absolute
+        top: 110px
+        left: 330px
+        opacity: 0
+    &__spot
+        position: absolute
+        fill: #fff
+        top: 175px
+        left: 170px
+        width: 700px
+        height: 700px
+        opacity: 0
+
+.menu-letters
+    position: absolute
+    top: 0
+    left: 50%
+    z-index: 3
+    transform: translateX(-50%)
+    display: flex
+    justify-content: space-between
+    width: 1408px
+    font-size: 285px
+    line-height: 392px
+    font-weight: bold
+    font-family: 'Bebas Neue'
+    color: #2b4798
+    user-select: none
+    pointer-events: none
+    opacity: 0
+
+.hidden
+    display: none
+
+.menu--contacts,
+.menu--company,
+.menu--portfolio
+    z-index: 5
+    display: flex
+    align-items: center
+    justify-content: center
+    //background-image: url(/img/menu/bg.jpg)
+    opacity: 1
+    transform: translateX(100%)
+
+@supports (mix-blend-mode: multiply)
+    .menu-letters
+        mix-blend-mode: multiply
+        color: #0031bb
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .menu
+        &__list-item
+            margin: 0 0 60px
+        &__svg-text
+            width: 372px
+            height: 74px
+        &__svg-word
+            transform: translateY(72px)
+            font-size: 100px
+
+    .menu-images
+        top: calc(50% - 800px / 2)
+        left: calc(50% - 800px / 2 + 350px)
+        &__waves
+            width: 800px
+            height: 800px
+        &__spot
+            top: 125px
+            left: 130px
+            width: 550px
+            height: 550px
+        &__image
+            max-width: 300px
+
+    .menu-letters
+        width: 1390px
+        font-size: 215px
+
+    .menu
+        &__when-menu
+            bottom: 40px
+            .text-with-bg
+                font-size: 18px
+                line-height: 22px
+                &__back
+                    top: 9px
+                    height: 9px
+        &__socials
+            right: 50px
+
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .menu
+        &__list-item
+            margin: 0 0 40px
+        &__svg-text
+            width: 270px
+            height: 52px
+        &__svg-word
+            transform: translateY(50px)
+            font-size: 70px
+            stroke-width: 1px
+        &__when-menu
+            bottom: 19px
+            .text-with-bg
+                font-size: 16px
+        &__socials
+            right: 30px
+
+    .menu-images
+        top: calc(50% - 600px / 2)
+        left: calc(50% - 600px / 2 + 150px)
+        &__waves
+            width: 600px
+            height: 600px
+        &__spot
+            top: 100px
+            left: 100px
+            width: 400px
+            height: 400px
+        &__image
+            top: 70px
+            left: 250px
+            max-width: 190px
+
+    .menu-letters
+        width: 100%
+        font-size: 115px
+        line-height: 270px
+
+@media (max-width: 768px)
+    .menu__when-menu .text-with-bg
+        font-size: 12px
+    .menu__contacts .text-with-bg__line
+        white-space: nowrap
+        margin: 0
+    .menu__when-menu .text-with-bg
+        font-size: 16px
+        display: flex
+        flex-direction: column
+    .menu__contacts
+        padding: 5%
+        display: flex
+        width: 100%
+        left: 0 !important
+        justify-content: space-around
+
+@media (max-width:500px)
+     .menu__when-menu .text-with-bg
+        font-size: 12px
+     .socials__item
+        margin: 0 15px 0 0
+
+@media (max-height: 400px)
+     .menu__list-item
+        margin: 0 0 20px
+     .menu__svg-word
+        font-size: 55px
+     .menu__contacts
+        padding: 0%

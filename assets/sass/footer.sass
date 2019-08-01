@@ -1,0 +1,38 @@
+.language
+    position: fixed
+    bottom: 78px
+    left: 107px
+    z-index: 10
+    font-size: 18px
+    &__link
+        margin: 0 10px 0 0
+        display: inline-block
+        text-decoration: none
+        color: #fff
+        &:last-child
+            margin: 0
+        &.active
+            font-weight: 900
+
+
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .language
+        bottom: 40px
+        left: 50px
+
+
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .language
+        left: 30px
+        bottom: 20px
+        font-size: 14px
+
+@media (max-width:768px)
+    .page-number__number
+        font-size: 58px !important
+    .language
+        font-size: 14px !important

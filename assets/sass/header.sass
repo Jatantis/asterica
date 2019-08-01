@@ -1,0 +1,151 @@
+.logo
+    z-index: 12
+    &_white
+        fill: #fff
+
+.header
+    position: fixed
+    z-index: 11
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    padding: 61px 107px 0
+    &__logo
+        width: 189px
+
+.open-menu
+    z-index: 12
+    position: relative
+    display: flex
+    align-items: center
+    padding: 12px 0
+    cursor: pointer
+    &__text
+        margin: 0 29px 0 0
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 2.8px
+        color: #fff
+
+.open-menu-icon
+    position: relative
+    display: block
+    width: 23px
+    height: 23px
+    &__item
+        position: absolute
+        display: block
+        width: 9px
+        height: 9px
+        background-color: #fff
+        transition-duration: 100ms
+        transition-property: transform
+        transition-timing-function: ease-out
+        &:nth-child(1)
+            top: 0
+            left: 0
+        &:nth-child(2)
+            top: 0
+            right: 0
+        &:nth-child(3)
+            right: 0
+            bottom: 0
+        &:nth-child(4)
+            bottom: 0
+            left: 0
+    &_translated
+        transition-duration: 200ms
+        transition-property: transform, opacity
+        .open-menu-icon__item
+            &:nth-child(1)
+                transform: translate3d(3px, 3px, 0)
+            &:nth-child(2)
+                transform: translate3d(-3px, 3px, 0)
+            &:nth-child(3)
+                transform: translate3d(-3px, -3px, 0)
+            &:nth-child(4)
+                transform: translate3d(3px, -3px, 0)
+    &_hidden
+        transform: scale(0.5)
+        opacity: 0
+
+.close-menu-icon
+    position: absolute
+    width: 21px
+    height: 21px
+    fill: #fff
+    right: 0
+    transform: scale(0.7)
+    opacity: 0
+    transition-duration: 200ms
+    transition-property: opacity, transform
+    transition-timing-function: ease-in
+    &_opened
+        opacity: 1
+        transform: scale(1)
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .header
+        padding: 30px 50px
+        &__menu
+            font-size: 12px
+
+    .logo
+        width: 60px
+
+    .open-menu
+        &__text
+            margin: 0 22px 0 0
+
+    .open-menu-icon
+        width: 19px
+        height: 19px
+        &__item
+            width: 7px
+            height: 7px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .header
+        padding: 20px 30px
+
+@media (max-width: 500px)
+    .logo_title
+       font-size: 0.8em !important
+    .logo
+       width: 43px
+    .menu__list-item
+       margin: 0 0 5px
+    .menu__svg-word
+       font-size: 46px
+    .menu .container
+       padding: 0 !important
+       padding-left: 10px !important
+    .menu__contacts
+       flex-direction: column
+       padding: 3%
+    .socials
+       align-self: flex-end
+       margin: 2%
+    .header__menu
+       padding: 2% !important
+    .header
+       padding: 20px 15px 0 20px
+
+@media (min-width: 2200px)
+    .open-menu-icon
+       width: 32px !important
+       height: 32px !important
+    .open-menu-icon__item
+       width: 12px !important
+       height: 12px !important
+    .logo_title
+       font-size: 1.3em
+
+@media (max-height: 500px)
+    .logo_title
+       font-size: 0.8em !important
+    .logo
+       width: 43px

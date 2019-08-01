@@ -1,0 +1,215 @@
+.brief
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -2
+    padding: 100px 0 127px
+    color: #fff
+    background-color: rgba(0, 0, 0, 0.97)
+    overflow: auto
+    opacity: 0
+    -webkit-overflow-scrolling: touch
+    &_active
+        z-index: 11
+        opacity: 1
+    &__title
+        margin: 0 0 75px
+    &__desc
+        margin: 0 0 100px
+        font-size: 24px
+        font-weight: bold
+        a
+            color: #0096ff
+            text-decoration: none
+    &__form
+        max-width: 1227px
+        font-size: 21px
+    &__fieldset
+        margin: 0 0 80px
+        border: 0
+        padding: 0
+    &__fieldset-title
+        margin: 0 0 43px
+        font-size: 36px
+        font-weight: bold
+        text-transform: uppercase
+    &__types
+        display: flex
+        max-width: 746px
+        flex-wrap: wrap
+    &__checkbox
+        margin: 0 0 40px
+        width: 33.3333%
+        display: block
+        user-select: none
+        input
+            display: none
+            &:checked + span
+                color: #0096ff
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -2px
+                    width: 100%
+                    height: 2px
+                    background-color: #0096ff
+        span
+            position: relative
+            cursor: pointer
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6)
+            margin: 0
+    &__budget
+        display: flex
+        justify-content: space-between
+        max-width: 746px
+    &__radio
+        user-select: none
+        input
+            display: none
+            &:checked + span
+                color: #0096ff
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -2px
+                    width: 100%
+                    height: 2px
+                    background-color: #0096ff
+        span
+            position: relative
+            cursor: pointer
+            background: #001727
+            padding: 3%
+            white-space: nowrap
+    &__input
+        width: 100%
+        border-bottom: 1px solid #fff
+        padding: 0
+        background-color: transparent
+        min-height: 31px
+        height: 31px
+        color: #fff
+        &-label
+            display: block
+            position: relative
+            &.focused
+                .brief__input-text
+                    transform: translateY(-15px) scale(0.75)
+        &-text
+            position: absolute
+            left: 0
+            top: 0
+            pointer-events: none
+            transform-origin: 0 0
+            transition: transform 200ms ease-out
+    &__file-loader
+        display: flex
+        align-items: center
+    &__form-end
+        display: flex
+        align-items: center
+    &__agreement
+        margin: 0 0 0 50px
+        font-size: 14px
+
+.brief-file-button
+    margin: 0 30px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+.brief-file
+    display: none
+    transform: translateY(-3px)
+    &_active
+        display: block
+        cursor: pointer
+        &::before
+            content: ''
+            position: absolute
+            top: 13px
+            left: 0
+            width: 100%
+            height: 3px
+            background-color: #ff0000c7
+            transform: scaleX(0)
+            transform-origin: 0 0
+            transition-property: transform
+            transition-duration: 300ms
+            transition-timing-function: ease-out
+        &:hover::before
+            transform: scaleX(1)
+
+.brief-input-file
+    display: none
+    opacity: 0
+
+.brief-contact-data
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__input
+        margin: 0 0 65px
+        width: calc(50% - 160px / 2)
+        &:nth-child(3),
+        &:nth-child(4)
+            margin: 0
+
+.brief-close
+    position: absolute
+    top: 72px
+    right: 107px
+    display: flex
+    align-items: center
+    cursor: pointer
+    &__text
+        margin: 0 20px 0 0
+        text-transform: uppercase
+        letter-spacing: 2.8px
+        color: #fff
+    &__icon
+        width: 31px
+        height: 31px
+        fill: #fff
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .brief
+        &__form
+            font-size: 18px
+        &__title
+            margin: 0 0 50px
+            font-size: 100px
+        &__desc
+            margin: 0 0 80px
+            font-size: 21px
+            font-weight: 400
+        &__fieldset-title
+            margin: 0 0 35px
+            font-size: 24px
+        &__checkbox
+            margin: 0 0 30px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .brief
+        &__form
+            font-size: 16px
+        &__title
+            margin: 0 0 30px
+            font-size: 55px
+        &__desc
+            margin: 0 0 60px
+            font-size: 18px
+            font-weight: 400
+        &__fieldset-title
+            margin: 0 0 35px
+            font-size: 21px
+        &__checkbox
+            margin: 0 0 30px

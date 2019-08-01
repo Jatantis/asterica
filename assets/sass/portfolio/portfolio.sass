@@ -1,0 +1,248 @@
+.portfolio-page
+    overflow: auto
+    height: 100vh
+    &__background
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-image: url(~@/assets/img/portfolio/bg.jpg)
+
+.portfolio-wrapper
+    position: relative
+    padding: 150px 0 170px
+
+.portfolio-title
+    margin: 0 0 220px
+
+.project
+    margin: 0 0 170px
+    &:last-child
+        margin: 0
+    display: flex
+    align-items: flex-start
+    padding: 0 50px
+    &__left
+        position: relative
+        margin: 0 100px 0 0
+        width: 800px
+    &__count
+        position: absolute
+        top: -120px
+        left: -50px
+        z-index: 1
+        width: 120px
+        height: 189px
+    &__count-number
+        font-size: 240px
+        font-family: 'HeatherGreen'
+        fill: transparent
+        stroke: #fff
+        stroke-width: 3px
+        transform: translateY(173px)
+    &__gradient
+        position: absolute
+        left: -33px
+        bottom: 123px
+        z-index: 0
+        width: calc(100% + 33px)
+        height: 81%
+        background-image: repeating-linear-gradient(-45deg, black, black 15px, transparent 15px, transparent 30px)
+    &__preview
+        max-width: 800px
+        position: relative
+        z-index: 2
+    &__logo
+        position: absolute
+        top: 20px
+        right: -50px
+        z-index: 3
+    &__right
+        width: calc(100% - 900px)
+        padding: 0px 0 0
+        color: #fff
+    &__type
+        font-size: 18px
+    &__title
+        margin: 5px 0 15px
+        font-size: 40px
+        text-transform: uppercase
+    &__desc
+        margin: 0 0 100px
+        font-size: 16px
+
+.project-categories
+    margin: 0
+    padding: 0
+    list-style-type: none
+    font-size: 16px
+    &__item
+        margin: 0 0 20px
+        display: flex
+        align-items: center
+    &__icon
+        fill: transparent
+        stroke: #fff
+    &__text
+        margin: 0 0 0 19px
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .portfolio-wrapper
+        padding: 100px 0 120px
+
+    .portfolio-title
+        margin: 0 0 160px
+
+    .project
+        &__left
+            width: 700px
+        &__preview
+            max-width: 700px
+        &__right
+            width: calc(100% - 700px)
+        &__count
+            top: -100px
+            height: 169px
+        &__count-number
+            font-size: 210px
+            transform: translateY(152px)
+            stroke-width: 2px
+        &__desc
+            margin: 0 0 80px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .portfolio-wrapper
+        padding: 100px 0 120px
+
+    .portfolio-title
+        margin: 0 0 160px
+
+    .project
+        &__left
+            width: 600px
+        &__preview
+            max-width: 600px
+        &__right
+            width: calc(100% - 600px)
+        &__count
+            top: -80px
+            height: 131px
+        &__count-number
+            font-size: 160px
+            transform: translateY(118px)
+            stroke-width: 2px
+        &__gradient
+            bottom: 100px
+        &__type
+            font-size: 16px
+        &__title
+            font-size: 30px
+        &__desc
+            margin: 0 0 50px
+            font-size: 14px
+
+@media (max-width: 1200px)
+    .project__left
+        width: 450px
+    .project__preview
+        max-width: 450px
+    .project__right
+        width: calc(100% - 400px)
+@media (max-width: 1000px)
+    .project
+       flex-direction: column
+       justify-content: center
+       align-items: center
+    .project__left
+       width: 80%
+       margin: 0
+    .project__right
+       width: 80%
+    .project__preview
+       max-width: 100%
+    .project-categories
+       display: flex
+       justify-content: space-between
+
+@media (max-width: 500px)
+    .project-categories__item
+       margin: 0 5px 20px
+    .project-categories__item svg
+       width: 25px
+       height: 25px
+    .project-categories
+       font-size: 10px
+       align-items: center
+       justify-content: center
+    .project__right
+       width: 120% !important
+    .portfolio-title
+       margin: 0 0 80px
+    .project__count-number
+       font-size: 95px
+    .project__gradient
+       height: 60%
+    .project__logo
+       max-width: 60%
+
+@media (max-width: 1000px)
+     .project__logo__before
+       height: 50% !important
+       width: 60% !important
+     .portfolio-wrapper .container
+       padding: 0 25px !important
+
+@media (min-width: 1000px)
+    .project__desc
+       transform-origin: 0 0
+       font-size: 16px
+       width: 80%
+    .portfolio-wrapper .container
+       padding: 0 50px !important
+
+
+@media (min-width: 1400px)
+    .project__desc
+        font-size: 16px
+        width: 100%
+    .portfolio-wrapper .container
+        padding: 0 50px !important
+
+
+@media (min-width: 1700px)
+     .project__desc
+        font-size: 20px
+        width: 140%
+     .portfolio-wrapper .container
+        padding: 0 0px !important
+
+
+@media (min-width:2200px)
+    .project
+       margin: 0 0 300px
+    .project__type
+       font-size: 25px
+    .project__desc
+       font-size: 23px
+       width: 188%
+    .project-categories
+       display: flex
+       font-size: 24px
+    .project-categories__item
+       margin: 0 20px 20px
+    .portfolio-wrapper .container
+       padding: 0 0px !important
+
+.project__right .text-with-bg
+    line-height: 25px
+.project__desc .text-with-bg__content
+    display: inline
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAASSURBVHgBY2BgYPjPBCQY0AgAFWgBCDyEHKIAAAAASUVORK5CYII=')
+    background-repeat: repeat-x
+    background-position: 50% 65%
+
+.project__desc .text-with-bg__back
+    display: none

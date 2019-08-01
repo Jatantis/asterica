@@ -1,0 +1,37 @@
+.title
+    margin: 0
+    line-height: 1.2em
+    font-family: 'Bebas Neue'
+    &_white
+        color: #fff
+    &_huge
+        font-size: 140px
+        text-transform: uppercase
+    &_36
+        margin: 0 0 10px
+        font-size: 36px
+    &_type
+        &_subtitle
+            font-family: 'Gosha Sans'
+            font-size: 36px
+    &_location_company
+        margin: 0 0 120px
+        opacity: 0
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .title
+        &_huge
+            font-size: 100px
+        &_type_subtitle
+            font-size: 26px
+        &_location_company
+            margin: 0 0 60px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .title
+        &_huge
+            font-size: 70px
+        &_location_company
+            margin: 0 0 40px

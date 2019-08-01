@@ -1,0 +1,171 @@
+.contacts-screen__text .text-with-bg__line
+    transform: scale(0)
+.brief__radio span
+    padding: 7%
+    display: flex
+    white-space: nowrap
+    width: fit-content
+.brief .container
+    padding: 30px 30px !important
+.contacts-screen
+    height: 100vh
+    //background-image: url(~@/assets/img/contacts/bg.jpg)
+    //background-size: cover
+    //background-position: center
+    &__content
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        align-content: center
+        padding: 0 0 0 17.5%
+    &__text
+        margin: 0 0 130px
+        display: flex
+        width: 100%
+    &__title
+        margin: 0 100px 0 0
+    &__desc
+        position: absolute
+        padding: 0px 0 0
+    &__text-with-bg
+        margin: 0 0 90px
+        font-size: 21px
+        line-height: 30px
+        .text-with-bg
+            &__line
+                transform: scaleX(0)
+            &__back
+                top: 12px
+                height: 11px
+            &__front
+                opacity: 0
+
+.contacts-screen .contacts_type_column
+    .text-with-bg
+        &__line
+            margin: 0 0 15px
+            display: block
+            transform: scaleX(0)
+        &__front
+            opacity: 0
+            pointer-events: none
+
+@media (min-width: 2200px)
+     .contacts-screen__text-with-bg
+          font-size: 30px !important
+     .button_red
+          font-weight: 500
+          font-size: 23px
+          white-space: nowrap
+          padding: 13px
+          white-space: nowrap
+          max-width: fit-content
+          display: flex
+          justify-content: center
+          align-items: center
+     .brief_active .container
+          margin: 0 auto
+          width: 100%
+          max-width: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          min-height: 100vh
+          flex-direction: column
+
+
+
+@media (max-width: 1200px)
+      .contacts-screen__text
+         margin: 0 !important
+      .contacts-screen__title
+         font-size: 45px
+      .contacts-screen__desc
+         right: 10% !important
+      .contacts-screen__text-with-bg
+         font-size: 15px
+         margin: 0 0 40px
+      .contacts-screen__text-with-bg .text-with-bg__back
+         top: 14px
+         height: 5px
+      .contacts
+         font-size: 15px
+      .button_red
+         margin-top: 5%
+         max-width: 175px
+         height: 35px
+         font-size: 12px
+
+
+@media (max-width: 500px)
+     .contacts-screen__text
+         margin: 0 !important
+     .contacts-screen__title
+         margin: 0 20px 0 0 !important
+         font-size: 30px !important
+     .contacts-screen__text-with-bg
+         font-size: 13px
+         margin: 0 0 40px
+     .contacts-screen__text-with-bg .text-with-bg__back
+         top: 14px
+         height: 5px
+     .contacts
+         font-size: 11px
+     .button_red
+         max-width: 165px
+         height: 33px
+         font-size: 10px
+
+@media (max-width: 768px)
+     .brief__form-end
+         align-items: flex-start
+     .brief__desc a
+         white-space: nowrap
+     .brief__form-end .button_red
+         margin: 0
+     .brief__checkbox
+         white-space: nowrap
+         width: 50%
+     .brief__budget
+         flex-direction: column
+     .brief__radio span
+         justify-content: flex-start
+         padding: 2%
+         white-space: nowrap
+         width: fit-content
+         margin-top: -7%
+     .contacts-screen__desc
+         right: 0 !important
+         padding: 0
+     .contacts-screen__text
+         margin: 0 !important
+     .contacts-screen__title
+         margin: 0 20px 0 0
+         font-size: 25px
+     .contacts-screen__text-with-bg
+         font-size: 13px
+         margin: 0 0 0px
+     .contacts-screen__text-with-bg .text-with-bg__back
+         top: 14px
+         height: 5px
+     .contacts
+         font-size: 11px
+     .button_red
+         margin-top: 0%
+         max-width: 165px
+         height: 33px
+         font-size: 10px
+
+@media (max-height: 400px)
+     .contacts-screen__title
+         font-size: 32px !important
+     .contacts-screen__text
+         align-items: center
+         flex-direction: row !important
+     .contacts-screen__text-with-bg
+         margin: 0 0 0px
+     .contacts-screen__desc
+         padding: 20px
+     .contacts__item
+         white-space: nowrap

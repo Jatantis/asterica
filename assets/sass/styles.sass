@@ -1,0 +1,56 @@
+.backgrounds
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 2
+    pointer-events: none
+    img
+        display: none
+    canvas
+        position: fixed
+        top: 0
+        right: 0
+        z-index: 2
+
+.section
+    position: absolute
+    top: 0
+    left: 0
+    width: 100vw
+    opacity: 0
+    z-index: 0
+    &.active
+        z-index: 3
+        opacity: 1
+    &.from-first
+        z-index: 3
+        opacity: 1
+    &.hidden
+        opacity: 0
+
+.spot-item
+    position: fixed
+    z-index: 3
+    transform: scale(0)
+
+.webgl-backgrounds
+    transform: translateY(100%)
+
+.section-line-form
+    width: 502px
+    height: 370px
+    opacity: 0
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .section-line-form
+        width: 370px
+        height: auto
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .section-line-form
+        width: 320px
+        height: auto

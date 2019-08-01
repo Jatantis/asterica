@@ -1,0 +1,337 @@
+.section-3
+    &__content
+        position: relative
+        z-index: 6
+        display: flex
+        justify-content: flex-end
+    &__title
+        margin: 0 0 26px
+        display: flex
+        span
+            opacity: 0
+    &__subtitle
+        margin: 0 0 22px
+        font-size: 36px
+        font-family: 'Gosha Sans'
+        font-weight: 700
+        opacity: 0
+    &__section
+        margin: 0 0 46px
+        &:last-child
+            margin: 0
+            max-width: 90%
+    &__text
+        line-height: 30px
+        font-weight: bold
+        .text-with-bg
+            &__back
+                top: 13px
+                height: 11px
+    &__content-wrapper
+        position: relative
+    .section-3__section:last-child .text-with-bg__line:last-child, .hide_this_shit
+        display: none
+    .section-3__section:last-child .text-with-bg__back
+        display: none
+    .section-3__section:last-child .text-with-bg__content
+        display: inline
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAASSURBVHgBY2BgYPjPBCQY0AgAFWgBCDyEHKIAAAAASUVORK5CYII=')
+        background-repeat: repeat-x
+        background-position: 50% 65%
+
+.section-3
+    .section-line-form
+        position: absolute
+        top: -99px
+        right: -106px
+    &__images
+        position: absolute
+        top: calc(50% - 1160px / 2 + 80px)
+        left: calc(50% - 1190px / 2 - 301px)
+    &__waves
+        width: 1190px
+        height: 1160px
+        path
+            opacity: 0
+    &__wave
+        &-1
+            transform-origin: 50% 50%
+            fill: #5e657f
+        &-2
+            transform-origin: 50% 50%
+            fill: #4f5668
+        &-3
+            transform-origin: 50% 50%
+            fill: #383e4c
+        &-4
+            transform-origin: 50% 50%
+            fill: #282c35
+    &__spot
+        position: absolute
+        width: 812px
+        height: 812px
+        top: 15%
+        left: 17%
+        opacity: 0
+    &__hands
+        position: absolute
+        top: 55px
+        left: 76px
+        z-index: 1
+        opacity: 0
+    &__gradient
+        position: absolute
+        top: 180px
+        right: 31px
+    &__mac
+        top: calc(50% - 260px / 2)
+        left: calc(50% - 179px / 2)
+    &__hairstyle
+        top: calc(50% - 208px / 2)
+        left: calc(50% - 230px / 2)
+    &__pizza
+        top: calc(50% - 195px / 2)
+        left: calc(50% - 230px / 2)
+    &__gamepad
+        top: calc(50% - 139px / 2)
+        left: calc(50% - 230px / 2)
+    &__ufo
+        top: calc(50% - 80px / 2)
+        left: calc(50% - 230px / 2)
+
+.section-3-small-spot
+    position: absolute
+    right: 480px
+    bottom: 130px
+    &__icon
+        width: 175px
+        opacity: 0
+    &__line
+        position: absolute
+        right: 60px
+        top: 51px
+        width: 291px
+        height: 1px
+        background-color: #fff
+        transform: scale(0) rotate(-45deg)
+        transform-origin: 100% 100%
+
+.section-3-optimize
+    .title
+        span
+            will-change: transform, opacity
+    .section-3__subtitle
+        will-change: opacity
+    .text-with-bg__line,
+    .text-with-bg__front,
+    .text-with-bg__back
+        will-change: transform
+    .section-3__hands
+        will-change: transform, opacity
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .section-3
+        &__content
+            padding: 0 100px
+        &__images
+            top: calc(50% - 960px / 2 + 80px)
+            left: calc(50% - 890px / 2 - 301px)
+        &__section
+            margin: 0 0 35px
+        &__subtitle
+            margin: 0 0 10px
+            font-size: 26px
+        &__text
+            font-size: 18px
+            font-weight: 400
+            .text-with-bg
+                &__back
+                    top: 13px
+                    height: 9px
+        &__waves
+            width: 890px
+            height: 860px
+        &__spot
+            top: 15%
+            left: 17%
+            width: 582px
+            height: 582px
+        &__hands
+            width: 510px
+
+    .section-3-small-spot
+        right: 190px
+        bottom: 80px
+        &__icon
+            width: 124px
+        &__line
+            width: 151px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .section-3
+        &__images
+            top: calc(50% - 660px / 2 + 80px)
+            left: calc(50% - 630px / 2 - 301px)
+        &__waves
+            width: 660px
+            height: 630px
+        &__spot
+            width: 442px
+            height: 442px
+        &__hands
+            width: 340px
+        &__gradient
+            width: 460px
+            top: 200px
+            right: 111px
+        &__subtitle
+            font-size: 20px
+        &__text
+            font-size: 16px
+        &__content-wrapper
+            margin: 0 0px 0 460px
+        .section-line-form
+            top: -39px
+            right: -16px
+
+    .section-3-small-spot
+        bottom: 50px
+        right: calc(50% - 94px / 2 - 500px)
+        &__icon
+            width: 94px
+        &__line
+            width: 131px
+            bottom: 60px
+            right: 40px
+
+@media (min-width: 1100px)
+      .section-3__content-wrapper
+            margin: 0 0px 0 300px
+
+@media (max-width: 768px), (max-height: 550px)
+        .section-3-small-spot
+            bottom: 15%
+            right: 10%
+        .section-3__waves
+            width: 660px
+            height: 630px
+            left: -5%
+            top: 25%
+        .section-3 .section-line-form
+            top: -100px
+            right: -70px
+        .section-3__hands
+           position: fixed
+           top: 63% !important
+           left: 29% !important
+        .section-3__content-wrapper
+           max-width: 100%
+           margin-bottom: 12%
+        .container.section-3__content
+          display: flex
+          align-items: flex-start
+          justify-content: flex-start
+        .section-3__section
+          margin: 0 0 15px
+        .section-3 .section-line-form
+          right: -35%
+        .section-3__waves .waves-animation
+          margin-left: 40%
+
+@media (max-width: 768px), (max-height: 550px)
+        .open-menu__text
+           display: none !important
+        .section-3__title
+           white-space: nowrap
+           font-size: 38px !important
+        .section-3__text
+           font-size: 15px !important
+           line-height: 23px !important
+        .section-nav
+           right: 10px
+        #section3 .container
+           margin: 0
+           padding: 0 !important
+        .section-3__content-wrapper
+           margin: 0 100px 0 25px
+        .section-line-form
+           width: 240px
+        .section-3 .section-line-form
+           right: -20%
+        .section-3__waves
+           left: 2% !important
+           top: 32%
+
+@media (min-width: 2200px)
+        .section-3__subtitle
+           font-size: 44px
+        .section-3__text
+           font-size: 28px
+        .section-3__content-wrapper
+           margin-right: -200px
+        .section-3__waves
+           margin-left: 10px
+           margin-top: -36px
+
+@media (max-width: 500px)
+        .section-3__content
+           margin: 0
+           padding: 0 !important
+        .section-3__content-wrapper
+           margin: 0
+           max-width: 80%
+           margin-left: 10%
+        .section-3__section
+           margin: 0 0 2px
+        .section-3__subtitle
+           font-size: 17px
+        .section-3__text
+           font-size: 13px !important
+           line-height: 18px
+        .section-3__text .text-with-bg__back
+           top: 10px !important
+           height: 5px !important
+        .section-3__title
+           font-size: 40px !important
+           margin-top: -5%
+        .section-3 .section-line-form
+           top: -10px
+           width: 170px
+        .section-3__waves
+           width: 0px
+           height: 0px
+        .section-3-small-spot__line
+           width: 0px !important
+           opacity: 0
+        .section-3-small-spot__icon
+           width: 151px
+        .section-3__hands
+           width: 210px
+        .section-3__spot
+           width: 0px
+           height: 0px
+
+@media (max-height: 400px)
+        .hide_section_on_mobile
+           display: none !important
+        .section-3__title, .section-3__section
+            margin: 0 0 5px
+        .section-3__text .text-with-bg__back
+            top: 10px
+        .section-3__spot
+            top: 75px
+            left: 385px !important
+            width: 350px
+            height: 350px
+        .section-3 .section-line-form
+            right: 25%
+        .section-3__hands
+            top: 25% !important
+            left: 45% !important
+        .section-3__waves
+            left: 10% !important
+            top: -10%
+            width: 450px
+            height: 450px

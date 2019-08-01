@@ -1,0 +1,290 @@
+@media (max-width:768px)
+     .section-2__waves, .waves-animation, .section-2__spot ,.waves-animation path, .section-2__spot path, .waves-animation path:nth-child(1)
+        position: fixed !important
+     .spot-item
+        display: none
+     span.text-with-bg__line
+        display: inline-block
+     .section-2__zeus
+        top: 270px !important
+        right: 225px !important
+     .section-2__text-wrapper
+        margin-bottom: 30%
+        max-width: 100%
+     .section-2-small-spot
+        bottom: 5% !important
+        left: 5% !important
+     .section-2__spot
+        left: 250px !important
+        top: 250px !important
+     .section-2__waves
+        left: 148px
+        top: 144px
+     .section-2__zeus
+        position: fixed !important
+        margin-top: 40%
+        left: 30%
+
+.section-2__text .text-with-bg__back
+    display: none
+.section-2__text .text-with-bg__content
+    display: inline
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAASSURBVHgBY2BgYPjPBCQY0AgAFWgBCDyEHKIAAAAASUVORK5CYII=')
+    background-repeat: repeat-x
+    background-position: 50% 65%
+.section-2
+    &__title
+        margin: 0 0 17px
+        display: flex
+        overflow: hidden
+        span
+            opacity: 0
+    &__text-wrapper
+        position: relative
+        z-index: 1
+    &__text
+        overflow: hidden
+
+.section-2
+    .section-line-form
+        position: absolute
+        top: -67px
+        left: -108px
+    &__images
+        position: absolute
+        top: calc(50% - 1228px / 2)
+        left: calc(50% - 1228px / 2 + 285px)
+    &__spot
+        position: absolute
+        width: 802px
+        height: 842px
+        top: 193px
+        left: 212px
+        opacity: 0
+    &__waves
+        width: 1228px
+        height: 1228px
+        path
+            opacity: 0
+    &__wave
+        &-1
+            display: block
+            fill: #5e657f
+            transform-origin: 50% 50%
+        &-2
+            fill: #4f5668
+            transform-origin: 50% 50%
+        &-3
+            fill: #383e4c
+            transform-origin: 50% 50%
+        &-4
+            fill: #282c35
+            transform-origin: 50% 50%
+    &__zeus
+        opacity: 0
+        position: absolute
+        top: 176px
+        right: 230px
+        z-index: 1
+    &__gradient
+        opacity: 0
+        position: absolute
+        right: 190px
+        bottom: 160px
+
+.section-2-small-spot
+    position: absolute
+    bottom: 130px
+    left: 480px
+    &__icon
+        width: 204px
+        opacity: 0
+    &__line
+        position: absolute
+        bottom: 80px
+        left: 60px
+        width: 291px
+        height: 1px
+        background-color: #fff
+        transform: scale(0) rotate(-45deg)
+        transform-origin: 0 0
+
+.section-2__text
+    .text-with-bg
+        &__back
+            top: 21px
+            height: 11px
+
+.section-2-optimize
+    .title
+        span
+            will-change: transform, opacity
+    .section-2
+        &__zeus
+            will-change: transform
+        &__waves
+            path
+                will-change: opacity, transform
+    .text-with-bg__line,
+    .text-with-bg__back,
+    .text-with-bg__front,
+    .js-parallax-element
+            will-change: transform
+
+
+@media (max-width: 2200px), (max-height: 1200px)
+
+    .section-2
+        &__images
+            top: calc(50% - 828px / 2)
+            left: calc(50% - 828px / 2 + 285px)
+        &__waves
+            width: 828px
+            height: 828px
+        &__spot
+            width: 542px
+            height: 542px
+            top: 140px
+            left: 142px
+        &__zeus
+            top: 136px
+            right: 170px
+            width: 270px
+        &__text
+            font-size: 18px
+            line-height: 38px
+            .text-with-bg
+                &__back
+                    top: 17px
+                    height: 10px
+        &__gradient
+            right: 280px
+            bottom: 260px
+            width: 600px
+
+    .section-2-small-spot
+        bottom: 70px
+        left: calc(50% - 130px / 2 - 500px)
+        &__icon
+            width: 124px
+        &__line
+            width: 151px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .section-2
+        &__images
+            z-index: 0
+            top: calc(50% - 628px / 2)
+            left: calc(50% - 628px / 2 + 150px)
+        &__waves
+            width: 628px
+            height: 628px
+            z-index: -1
+        &__spot
+            width: 422px
+            height: 422px
+            top: 100px
+            left: 102px
+        &__zeus
+            top: 96px
+            right: 140px
+            width: 200px
+        &__gradient
+            right: 180px
+            bottom: 200px
+            width: 460px
+        &__text
+            font-size: 16px
+            line-height: 32px
+            .text-with-bg
+                &__back
+                    top: 14px
+                    height: 8px
+
+    .section-2-small-spot
+        bottom: 50px
+        left: calc(50% - 94px / 2 - 500px)
+        &__icon
+            width: 94px
+        &__line
+            width: 131px
+            bottom: 60px
+            left: 40px
+
+@media (max-width:500px)
+    .section-2 .section-line-form
+        left: 50%
+    .section-2__title
+        font-size: 38px !important
+    .section-2__text
+        font-size: 15px !important
+    .section-2__text-wrapper
+        width: 80vw
+        position: absolute
+        top: 15%
+        left: 10%
+    .section-2__zeus
+        z-index: 0
+        right: 380px !important
+
+@media (min-width: 2200px)
+    .section-2__text .text-with-bg__back
+        top: 22px
+    .section-2__text
+        font-size: 32px
+    .section-2__images
+        z-index: 0
+    .section-2__waves
+        margin-top: -27px
+        margin-left: 56px
+
+@media (max-width: 400px)
+     .section-2__title
+        font-size: 35px !important
+     .section-2__text
+        font-size: 13px !important
+     .section-2__text-wrapper
+        top: 19%
+     .section-2__zeus
+        width: 140px
+     .section-2__spot
+        left: 80px !important
+        top: 200px !important
+        width: 150px
+        height: 150px
+     .section-2__waves
+        width: 235px
+        height: 235px
+        left: 40px
+        top: 163px
+     .section-2-small-spot__icon
+        width: 53px
+     .section-2-small-spot__line
+        width: 80px
+        bottom: 20px
+        left: 20px
+
+@media (max-height: 650px)
+      .section-2__text-wrapper
+          margin-bottom: 15% !important
+      .section-2__zeus
+          top: 25% !important
+      .section-2__text
+          line-height: 30px !important
+
+@media (max-height: 400px)
+      .section-2__text-wrapper
+           margin-bottom: 0% !important
+      .section-2__zeus
+           top: -55% !important
+           left: 60% !important
+      .section-2__spot
+           top: 0% !important
+           width: 320px
+           height: 320px
+      .section-2__waves
+           left: 130px
+           top: -135px
+           width: 560px
+           height: 560px

@@ -1,0 +1,79 @@
+body
+    margin: 0
+    font-size: 14px
+    font-family: 'Gosha Sans'
+    overflow: hidden
+    *
+        box-sizing: border-box
+
+.--overflow-hidden
+    overflow: hidden !important
+
+button
+    background: none
+    border: 0
+    padding: 0
+    appearance: none
+    &:focus
+        outline: none
+
+input
+    display: block
+    width: 100%
+    border: 0
+    appearance: none
+    &:focus
+        outline: none
+
+img
+    max-width: 100%
+.page-number
+    pointer-events: none
+.root-scrollable
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    margin: 0
+    padding: 0
+    overflow: hidden
+    &_fixed
+        position: fixed
+.container
+    margin: 0 auto
+    width: 100%
+    max-width: 1388px
+.socials
+    display: inline-flex
+    align-items: center
+    &__item
+        margin: 0 30px 0 0
+        transform: scale(0)
+        transform-origin: 50% 50%
+        &:last-child
+            margin: 0
+    &__icon
+        fill: #fff
+    &__vk
+        width: 25px
+        height: 13px
+    &__fb
+        width: 10px
+        height: 20px
+    &__be
+        width: 22px
+        height: 13px
+
+@media (max-width: 1700px), (max-height: 900px)
+
+    .socials
+        &__vk
+            width: 19px
+            height: 11px
+        &__fb
+            width: 8px
+            height: 15px
+        &__be
+            width: 19px
+            height: 11px
