@@ -11,7 +11,7 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_axios_88e728a0 from 'nuxt_plugin_axios_88e728a0' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_axios_21e19e08 from 'nuxt_plugin_axios_21e19e08' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_ksvuescrollmagic_03bbeed0 from 'nuxt_plugin_ksvuescrollmagic_03bbeed0' // Source: ..\\plugins\\ksvuescrollmagic (mode: 'client')
 import nuxt_plugin_metrika_22ee32c5 from 'nuxt_plugin_metrika_22ee32c5' // Source: ..\\plugins\\metrika.js (mode: 'client')
 
@@ -152,7 +152,7 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_axios_88e728a0 === 'function') await nuxt_plugin_axios_88e728a0(app.context, inject)
+  if (typeof nuxt_plugin_axios_21e19e08 === 'function') await nuxt_plugin_axios_21e19e08(app.context, inject)
 
   if (process.client) {
     if (typeof nuxt_plugin_ksvuescrollmagic_03bbeed0 === 'function') await nuxt_plugin_ksvuescrollmagic_03bbeed0(app.context, inject)

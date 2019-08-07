@@ -2,15 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _41deb521 = () => interopDefault(import('..\\pages\\company\\index.vue' /* webpackChunkName: "pages_company_index" */))
-const _d5ba173a = () => interopDefault(import('..\\pages\\contacts\\index.vue' /* webpackChunkName: "pages_contacts_index" */))
-const _5112874d = () => interopDefault(import('..\\pages\\en\\index.vue' /* webpackChunkName: "pages_en_index" */))
-const _255aaa76 = () => interopDefault(import('..\\pages\\portfolio\\index.vue' /* webpackChunkName: "pages_portfolio_index" */))
-const _642087ef = () => interopDefault(import('..\\pages\\process\\index.vue' /* webpackChunkName: "pages_process_index" */))
-const _d8f5166c = () => interopDefault(import('..\\pages\\en\\company\\index.vue' /* webpackChunkName: "pages_en_company_index" */))
-const _785429da = () => interopDefault(import('..\\pages\\en\\contacts\\index.vue' /* webpackChunkName: "pages_en_contacts_index" */))
-const _af5fb842 = () => interopDefault(import('..\\pages\\en\\portfolio\\index.vue' /* webpackChunkName: "pages_en_portfolio_index" */))
-const _090b8dd4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
+const _d648b2f6 = () => interopDefault(import('..\\pages\\company\\index.vue' /* webpackChunkName: "pages_company_index" */))
+const _bc77a102 = () => interopDefault(import('..\\pages\\contacts\\index.vue' /* webpackChunkName: "pages_contacts_index" */))
+const _5cd5712e = () => interopDefault(import('..\\pages\\en\\index.vue' /* webpackChunkName: "pages_en_index" */))
+const _a63e5a4c = () => interopDefault(import('..\\pages\\portfolio\\index.vue' /* webpackChunkName: "pages_portfolio_index" */))
+const _91c50d5a = () => interopDefault(import('..\\pages\\process\\index.vue' /* webpackChunkName: "pages_process_index" */))
+const _5223142e = () => interopDefault(import('..\\pages\\en\\company\\index.vue' /* webpackChunkName: "pages_en_company_index" */))
+const _e52b1214 = () => interopDefault(import('..\\pages\\en\\contacts\\index.vue' /* webpackChunkName: "pages_en_contacts_index" */))
+const _36037a43 = () => interopDefault(import('..\\pages\\en\\portfolio\\index.vue' /* webpackChunkName: "pages_en_portfolio_index" */))
+const _29b96732 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
@@ -88,39 +88,39 @@ export function createRouter() {
 
     routes: [{
       path: "/company",
-      component: _41deb521,
+      component: _d648b2f6,
       name: "company"
     }, {
       path: "/contacts",
-      component: _d5ba173a,
+      component: _bc77a102,
       name: "contacts"
     }, {
       path: "/en",
-      component: _5112874d,
+      component: _5cd5712e,
       name: "en"
     }, {
       path: "/portfolio",
-      component: _255aaa76,
+      component: _a63e5a4c,
       name: "portfolio"
     }, {
       path: "/process",
-      component: _642087ef,
+      component: _91c50d5a,
       name: "process"
     }, {
       path: "/en/company",
-      component: _d8f5166c,
+      component: _5223142e,
       name: "en-company"
     }, {
       path: "/en/contacts",
-      component: _785429da,
+      component: _e52b1214,
       name: "en-contacts"
     }, {
       path: "/en/portfolio",
-      component: _af5fb842,
+      component: _36037a43,
       name: "en-portfolio"
     }, {
       path: "/",
-      component: _090b8dd4,
+      component: _29b96732,
       name: "index"
     }],
 
