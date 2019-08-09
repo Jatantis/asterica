@@ -398,6 +398,7 @@
             min-height: 100%
             width: auto
             height: auto
+            object-fit: cover
 
     @media (min-width: 768px)
         .contacts-screen__desc

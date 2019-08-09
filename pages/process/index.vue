@@ -807,7 +807,8 @@ html, body {
   top: 0;
   left: 0;
   z-index: 0;
-  height: 100vh !important
+  height: 100vh !important;
+  object-fit: cover;
 }
 .tab_underline_animation:after{
   content: '';
