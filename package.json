@@ -15,7 +15,7 @@
     "animejs": "^2.2.0",
     "baffle": "^0.3.6",
     "cross-env": "^5.2.0",
-    "gsap": "^2.1.2",
+    "gsap": "^3.6.0",
     "ks-vue-scrollmagic": "^1.0.2",
     "npm": "^6.9.0",
     "nuxt": "^2.3.4",
